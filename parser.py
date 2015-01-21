@@ -1,13 +1,14 @@
 import ply.lex as lex
 
 tokens = (
-	'NAME', 'SELECT'
+	'NAME', 'SELECT', 'VERSION'
 )
 
 # Tokens
 
 t_NAME    = r'[a-zA-Z_=-][a-zA-Z0-9_=-]*'
 t_SELECT  = r'\(.*\)'
+t_VERSION = r'\d+.*'
 
 t_ignore = " \t"
 
